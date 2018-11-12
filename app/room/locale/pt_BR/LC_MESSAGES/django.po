@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-12 14:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: room/apps.py:7 room/models.py:7 room/models.py:28
+msgid "Room"
+msgstr "Sala"
+
+#: room/helpers.py:10
+msgid "Dates are incorrect"
+msgstr "Datas estão incorretas"
+
+#: room/helpers.py:25
+msgid "Schedule already scheduled"
+msgstr "Agendamento já existe"
+
+#: room/helpers.py:27
+msgid "Start"
+msgstr "Início"
+
+#: room/helpers.py:29
+msgid "End"
+msgstr "Fim"
+
+#: room/management/commands/createtoken.py:10
+msgid "Create the token for the user to use in the API."
+msgstr "Criar um token para o usuário que usará a API"
+
+#: room/management/commands/createtoken.py:13
+msgid "User is allowed to access the api"
+msgstr "Usuário tem permissão para acessar a API"
+
+#: room/management/commands/createtoken.py:25
+msgid "Already exists"
+msgstr "Já existe"
+
+#: room/management/commands/createtoken.py:27
+msgid "User"
+msgstr "Usuário"
+
+#: room/management/commands/createtoken.py:27
+msgid "does not exist"
+msgstr "não existe"
+
+#: room/models.py:8
+msgid "Rooms"
+msgstr "Salas"
+
+#: room/models.py:10
+msgid "Name"
+msgstr "Nome"
+
+#: room/models.py:11
+msgid "Capacity"
+msgstr "Capacidade"
+
+#: room/models.py:12
+msgid "Description"
+msgstr "Descrição"
+
+#: room/models.py:20
+msgid "Scheduling"
+msgstr "Agendamento"
+
+#: room/models.py:21
+msgid "Schedules"
+msgstr "Agendamentos"
+
+#: room/models.py:24
+msgid "Start Date"
+msgstr "Data de início"
+
+#: room/models.py:26
+msgid "End Date"
+msgstr "Data de fim"
+
+#: room/models.py:29
+msgid "Username"
+msgstr "Usuário"
+
+#: room/models.py:30
+msgid "Email"
+msgstr ""
