@@ -25,6 +25,7 @@ podem se criados com os comandos abaixo.
 ```bash
 docker-compose exec web sh 
 # Dentro do container web
+python manage.py migrate
 python manage.py createsuperuser --username admin --email admin@admin.com
 python manage.py createtoken --username admin
 ```
