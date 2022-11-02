@@ -16,6 +16,7 @@ jobs:
     - uses: isbang/compose-action@v1.4.0
       with:
         compose-file: "docker-compose.yml"
+        up-flags: "--build"
         down-flags: "--volumes"
     - name: Test Django
-      run: docker-compose exec web app/manage.py test
+      run: docker exec -it $(docker ps -f "name=web" -q) ./manage.py test
