@@ -18,7 +18,7 @@ jobs:
         compose-file: "docker-compose.yml"
         up-flags: "--build"
         down-flags: "--volumes"
-        compose-flags: "exec python3 app/manage.py test"
+        compose-flags: "exec web python3 app/manage.py test"
         services: |
           web
           db
