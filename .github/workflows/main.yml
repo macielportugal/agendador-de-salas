@@ -8,17 +8,18 @@ on:
 
 jobs:
   build:
-
+    timeout-minutes: 10
     runs-on: ubuntu-latest
   
     steps:
     - uses: actions/checkout@v3
-    - uses: isbang/compose-action@v1.4.0
-      with:
-        compose-file: "docker-compose.yml"
-        up-flags: "--build"
-        down-flags: "--volumes"
-        compose-flags: "exec web python3 app/manage.py test"
-        services: |
-          web
-          db
+
+    - name: Start containers
+      run: docker-compose -f "docker-compose.yml" up -d --build
+
+    - name: Run Test
+      run: docker-compose exec web python3 app/manage.py test
+
+    - name: Stop containers
+      if: always()
+      run: docker-compose -f "docker-compose.yml" down
