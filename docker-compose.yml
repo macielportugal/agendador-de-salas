@@ -2,7 +2,7 @@ version: '3.1'
 services:
   web:
     build: docker/python
-    links:
+    depends_on:
       - db
     ports:
       - 8000:8000
@@ -13,7 +13,7 @@ services:
     volumes:
       - /var/lib/postgresql/data
     ports:
-      - 3306:3306
+      - 5432:5432
     environment:
       - POSTGRES_PASSWORD=123456
       - POSTGRES_USER=django
