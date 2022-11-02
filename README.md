@@ -1,3 +1,6 @@
+![workflow](https://github.com/macielportugal/agendador-de-salas/actions/workflows/main.yml/badge.svg)
+
+
 # Agendador de salas
 
 ## Resumo
