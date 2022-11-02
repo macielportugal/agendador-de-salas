@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 RUN mkdir -p project \
-    && apk add --update --no-cache musl-dev python3-dev postgresql-dev jpeg-dev gettext zlib-dev g++ gcc libxslt-dev \
+    && apk add --update --no-cache musl-dev bash python3-dev postgresql-dev jpeg-dev gettext zlib-dev g++ gcc libxslt-dev \
     && rm -rf /var/cache/apk/*
 WORKDIR /project/app
 COPY ./requirements.txt /
