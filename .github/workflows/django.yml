@@ -19,4 +19,4 @@ jobs:
         up-flags: "--build"
         down-flags: "--volumes"
     - name: Test Django
-      run: docker exec -it $(docker ps -f "name=web" -q) ./manage.py test
+      run: docker exec $(docker ps -f "name=web" -q) ./manage.py test
