@@ -15,11 +15,9 @@ jobs:
     - uses: actions/checkout@v3
     - uses: isbang/compose-action@v1.4.0
       with:
-        compose-file: "docker-compose.yml"
+        compose-file: "docker-compose.ci.yml"
         up-flags: "--build"
         down-flags: "--volumes"
         services: |
           web
           db
-    - name: Test Django
-      run: docker exec $(docker ps -f "name=web" -q) ./manage.py test

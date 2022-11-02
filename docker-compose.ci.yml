@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  web:
+    build: docker/python
+    depends_on:
+      - db
+    volumes:
+      - .:/project:rw
+    entrypoint: ["python3", "app/manage.py", "test"]
+  db:
+    image: postgres:10.3-alpine
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=django
