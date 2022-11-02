@@ -18,4 +18,4 @@ jobs:
         compose-file: "./docker/docker-compose.yml"
         down-flags: "--volumes"
     - name: Test Django
-      run: docker-compsoe exec web app/manage.py test
+      run: docker-compose exec web app/manage.py test
