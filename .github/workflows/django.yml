@@ -18,5 +18,8 @@ jobs:
         compose-file: "docker-compose.yml"
         up-flags: "--build"
         down-flags: "--volumes"
+        services: |
+          web
+          db
     - name: Test Django
       run: docker exec $(docker ps -f "name=web" -q) ./manage.py test
