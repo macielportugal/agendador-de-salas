@@ -1,3 +1,2 @@
 #!/bin/sh
-sleep 10
-python manage.py runserver 0.0.0.0:8000
+/wait-for-it.sh db:5432 -- python manage.py runserver 0.0.0.0:8000

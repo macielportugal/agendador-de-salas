@@ -5,6 +5,8 @@ RUN mkdir -p project \
 WORKDIR /project/app
 COPY ./requirements.txt /
 COPY ./docker-entrypoint.sh /
+COPY ./wait-for-it.sh /
 RUN chmod +x /docker-entrypoint.sh
+RUN chmod +x /wait-for-it.sh
 RUN python -m pip install --no-cache-dir -r /requirements.txt
 ENTRYPOINT ["/docker-entrypoint.sh"]
