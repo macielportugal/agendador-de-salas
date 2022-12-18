@@ -3,7 +3,7 @@
 
 # Agendador de salas
 
-## Resumo 1
+## Resumo
 
 O agendador permite criar e gerenciar agendamentos de salas de reuniões atráves de API ou pela Interface web.
 
